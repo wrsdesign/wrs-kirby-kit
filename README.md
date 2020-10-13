@@ -1,4 +1,4 @@
-<a href="https://whiterussian.studio/"><img src="https://github.com/whiterussianstudio/wrs-kirby-kit/blob/master/assets/static/icons/192x192.png" alt="White Russian Studio" width="96"></a>
+<a href="https://whiterussian.studio/"><img src="https://whiterussian.studio/assets/wrs.png" alt="White Russian Studio" width="96"></a>
 
 Starter Kit with Kirby CMS
 ===============================================
