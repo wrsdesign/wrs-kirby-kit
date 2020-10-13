@@ -1,0 +1,43 @@
+{
+  "name": "wrs-kirby-kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@prettier/plugin-php": "^0.15.0",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.7",
+    "postcss-sort-media-queries": "^2.1.9",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "svg-spritemap-webpack-plugin": "^3.5.10",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "@ryangjchandler/spruce": "^2.0.0",
+    "@swup/preload-plugin": "^1.0.3",
+    "alpinejs": "^2.7.0",
+    "gsap": "^3.5.1",
+    "lazysizes": "^5.2.2",
+    "sanitize.css": "^12.0.1",
+    "scroll-lock": "^2.1.4",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swup": "^2.0.11",
+    "tailwindcss": "^1.9.0",
+    "unfetch": "^4.2.0"
+  }
+}

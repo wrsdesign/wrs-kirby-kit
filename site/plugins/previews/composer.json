@@ -1,0 +1,19 @@
+{
+    "name": "sylvainjule/previews",
+    "description": "Add some missing structure previews",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sylvain Julé",
+            "email": "contact@sylvain-jule.fr"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    },
+    "extra": {
+        "installer-name": "previews"
+    },
+    "minimum-stability": "beta"
+}

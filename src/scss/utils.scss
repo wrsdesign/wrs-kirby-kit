@@ -1,0 +1,8 @@
+/* Between function
+---------------------------------------------------------------------------- */
+@function between($from, $to, $fromWidth: 375px, $toWidth: 1366px) {
+  $slope: ($to - $from) / ($toWidth - $fromWidth);
+  $base: $from - $slope * $fromWidth;
+
+  @return calc(#{$slope * 100vw} + #{$base});
+}

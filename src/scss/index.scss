@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  @variants responsive {
+    .full-vh {
+      height: 100vh;
+      height: calc(var(--vh) * 100);
+    }
+    .min-full-vh {
+      min-height: 100vh;
+      min-height: calc(var(--vh) * 100);
+    }
+  }
+}
