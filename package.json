@@ -1,6 +1,6 @@
 {
   "name": "wrs-kirby-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "",
   "browserslist": [
@@ -17,6 +17,8 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "@prettier/plugin-php": "^0.15.0",
+    "@whiterussianstudio/tailwind-debug-mq": "^1.1.1",
+    "@whiterussianstudio/tailwind-easing": "^1.0.0",
     "browser-sync": "^2.26.12",
     "browser-sync-webpack-plugin": "^2.2.2",
     "cross-env": "^7.0.2",
@@ -37,7 +39,7 @@
     "scroll-lock": "^2.1.4",
     "smoothscroll-polyfill": "^0.4.4",
     "swup": "^2.0.11",
-    "tailwindcss": "^1.9.0",
+    "tailwindcss": "^1.9.2",
     "unfetch": "^4.2.0"
   }
 }
