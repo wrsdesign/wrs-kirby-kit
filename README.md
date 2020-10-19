@@ -30,3 +30,4 @@ Configure `webpack.mix.js` and `tailwind.config.js`
 - [ ] Documentation for svg sprite generations
 - [ ] Add more reusable fields and layouts
 - [ ] Add and documentation config.php file
+- [ ] Add and configure ESLint
