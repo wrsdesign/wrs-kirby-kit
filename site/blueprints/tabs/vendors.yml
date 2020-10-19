@@ -1,0 +1,10 @@
+label:
+  en: Vendors
+  ru: Вендорные скрипты
+fields:
+  vendors:
+    label: Вендорные скрипты
+    type: textarea
+    buttons: false
+    font: monospace
+    size: medium
