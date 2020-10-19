@@ -80,6 +80,10 @@
   <?= mix('/manifest.js', ['defer' => true]) ?>
   <?= mix('/vendor.js', ['defer' => true]) ?>
   <?= mix('/index.js', ['defer' => true]) ?>
+
+  <?php if (!option('debug') and $site->vendors()->isNotEmpty()): ?>
+    <?= $site->vendors() ?>
+  <?php endif ?>
 </head>
 
 <body>
