@@ -25,21 +25,21 @@
     "laravel-mix": "^5.0.7",
     "postcss-sort-media-queries": "^2.1.10",
     "sass": "^1.27.0",
-    "sass-loader": "^10.0.3",
+    "sass-loader": "^10.0.4",
     "svg-spritemap-webpack-plugin": "^3.5.10",
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
     "@ryangjchandler/spruce": "^2.0.1",
     "@swup/preload-plugin": "^1.0.3",
-    "alpinejs": "^2.7.1",
+    "alpinejs": "^2.7.2",
     "gsap": "^3.5.1",
     "lazysizes": "^5.2.2",
     "sanitize.css": "^12.0.1",
     "scroll-lock": "^2.1.4",
     "smoothscroll-polyfill": "^0.4.4",
     "swup": "^2.0.11",
-    "tailwindcss": "^1.9.5",
+    "tailwindcss": "^1.9.6",
     "unfetch": "^4.2.0"
   }
 }
