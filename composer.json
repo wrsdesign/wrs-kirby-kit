@@ -20,8 +20,6 @@
     "require": {
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0",
-        "felixhaeberle/kirby3-webp": "^1.0",
-        "bnomei/kirby3-bolt": "^1.2",
         "diverently/laravel-mix-kirby": "^1.4",
         "sylvainjule/previews": "^1.0"
     },
