@@ -1,5 +1,5 @@
 <?php
 
 return [
-  'kirby3-webp' => true
+  'debug' => true
 ];

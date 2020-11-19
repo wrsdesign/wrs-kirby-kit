@@ -1,15 +1,15 @@
 var generateSpacing = (m, c) => {
-  m = m || 5;
-  c = c || 100;
-  var result = {};
+  m = m || 5
+  c = c || 100
+  var result = {}
 
   for (var i = c; i >= 0; i--) {
-    var r = i * m;
-    result[r] = r + "px";
+    var r = i * m
+    result[r] = r + 'px'
   }
 
-  return result;
-};
+  return result
+}
 
 module.exports = {
   corePlugins: {
@@ -20,19 +20,19 @@ module.exports = {
     maxWidth: false,
     container: false,
     animation: false,
-    appearance: false,
+    appearance: false
   },
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
+    purgeLayersByDefault: true
   },
-  purge: ["site/templates/**/*.php", "site/snippets/**/*.php"],
+  purge: ['site/templates/**/*.php', 'site/snippets/**/*.php'],
   theme: {
     screens: {
-      sm: "768px",
-      lg: "1440px",
+      sm: '768px',
+      lg: '1440px'
     },
-    spacing: generateSpacing(),
+    spacing: generateSpacing()
   },
   variants: {
     transitionTimingFunction: false,
@@ -40,10 +40,10 @@ module.exports = {
     resize: false,
     userSelect: false,
     fontSmoothing: false,
-    accessibility: false,
+    accessibility: false
   },
   plugins: [
-    require("@whiterussianstudio/tailwind-debug-mq"),
-    require("@whiterussianstudio/tailwind-easing"),
-  ],
-};
+    require('@whiterussianstudio/tailwind-debug-mq'),
+    require('@whiterussianstudio/tailwind-easing')
+  ]
+}

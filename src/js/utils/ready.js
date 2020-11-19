@@ -7,16 +7,13 @@ var ready = fn => {
   // Sanity check
   if (typeof fn !== "function") return;
 
-  // If document is already loaded, run method
-  if (
-    document.readyState === "interactive" ||
-    document.readyState === "complete"
-  ) {
-    return fn();
+  var h = () => {
+    window.dispatchEvent(new CustomEvent('app:ready'))
+    return fn()
   }
 
   // Otherwise, wait until document is loaded
-  document.addEventListener("DOMContentLoaded", fn, false);
+  document.addEventListener("DOMContentLoaded", h, false);
 };
 
 export default ready;

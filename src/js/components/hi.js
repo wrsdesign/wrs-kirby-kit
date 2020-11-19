@@ -1,7 +1,14 @@
+import { isBreakpoint, getCurrentMediaQuery } from '@utils'
+
 window.App.hi = () => {
   return {
-    init() {
-      console.log('Hi')
+    init() {},
+    toggle() {
+      if(isBreakpoint('sm-')) {
+        console.log('ENABLED')
+      } else {
+        console.log('DISABLED')
+      }
     }
   }
 }

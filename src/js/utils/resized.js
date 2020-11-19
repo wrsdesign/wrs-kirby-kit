@@ -1,17 +1,22 @@
-var resized = (obj = window) => {
-  var setViewport = () => {
-    obj.viewport = {
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
+import getCurrentMediaQuery from './getCurrentMediaQuery'
 
-    var vh = document.documentElement.clientHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  };
+var resized = () => {
+  var mediaQuery = getCurrentMediaQuery()
 
-  window.addEventListener("resize", setViewport);
-  setViewport();
-};
+  var handleResize = () => {
+    var newMediaQuery = getCurrentMediaQuery()
 
+    if (newMediaQuery !== mediaQuery) {
+      window.dispatchEvent(new CustomEvent('breakpoints:change'))
+      mediaQuery = newMediaQuery
+    }
 
-export default resized;
+    var vh = document.documentElement.clientHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  }
+
+  window.addEventListener('resize', handleResize)
+  handleResize()
+}
+
+export default resized

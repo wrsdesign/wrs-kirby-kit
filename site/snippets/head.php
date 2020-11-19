@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="" class="antialiased">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
@@ -83,8 +83,11 @@
 
   <?php if (!option('debug') and $site->vendors()->isNotEmpty()): ?>
     <?= $site->vendors() ?>
-  <?php endif ?>
+  <?php endif; ?>
 </head>
 
-<body>
-<div x-data="App.hi()" x-init="init()"></div>
+<body class="<?= e(option('debug') == true, 'debug-mq') ?>">
+<div
+  x-data="App.hi()"
+  @app:ready.window="toggle()"
+  @breakpoints:change.window="toggle()"></div>
