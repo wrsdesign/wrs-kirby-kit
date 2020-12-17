@@ -15,30 +15,30 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
-    "@prettier/plugin-php": "^0.16.0",
+    "@fullhuman/postcss-purgecss": "^3.1.3",
+    "@prettier/plugin-php": "^0.16.1",
     "@whiterussianstudio/tailwind-debug-mq": "^1.1.2",
     "@whiterussianstudio/tailwind-easing": "^1.0.0",
     "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "laravel-mix": "^5.0.9",
-    "sass": "^1.29.0",
+    "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
-    "svg-spritemap-webpack-plugin": "^3.7.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
+    "svg-spritemap-webpack-plugin": "^3.8.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue-template-compiler": "^2.6.12"
   },
   "dependencies": {
-    "@ryangjchandler/spruce": "^2.0.1",
+    "@ryangjchandler/spruce": "^2.2.2",
     "@swup/preload-plugin": "^1.0.3",
-    "alpinejs": "^2.7.3",
+    "alpinejs": "^2.8.0",
     "gsap": "^3.5.1",
     "lazysizes": "^5.2.2",
     "sanitize.css": "^12.0.1",
     "scroll-lock": "^2.1.4",
     "smoothscroll-polyfill": "^0.4.4",
-    "swup": "^2.0.11",
+    "swup": "^2.0.13",
     "unfetch": "^4.2.0"
   }
 }
