@@ -1,5 +1,9 @@
 <a href="https://whiterussian.studio/"><img src="https://whiterussian.studio/assets/wrs.png" alt="White Russian Studio" width="96"></a>
 
+---
+### ⚡️ [New version with Vite and Windicss](https://github.com/whiterussianstudio/kirby-vite-project-kit)
+---
+
 Starter Kit with Kirby CMS
 ===============================================
 
